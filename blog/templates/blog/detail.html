@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{# эта страница возьмёт всё что есть в base и перепишет только содержимое блоков #}
+
+{% block title %}
+    Страница статьи блога {{ post.title }}
+{% endblock title %}
+
+{% block content %}
+    Тут текст статьи {{ post.title }}
+{% endblock content %}
+

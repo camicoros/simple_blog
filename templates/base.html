@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Title
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'main:index' %}">Главная</a></li>
+            <li><a href="{% url 'blog:index' %}">Блог</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
